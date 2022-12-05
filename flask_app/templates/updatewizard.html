@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Wizard</title>
+</head>
+<body>
+    <h1>Update {{wizard.name}}</h1>
+    <form action="/changewizard" method="POST">
+        <p>Name</p>
+        <input type="text" name="name" value = {{wizard.name}}>
+        <br>
+        <p>Type</p>
+        <input type="text" name="type" value = {{wizard.type}}>
+        <br>
+        <p>Power</p>
+        <input type="text" name="power" value = {{wizard.power}}>
+        <input type="hidden" mae="id" value="{{wizard.id}}">
+        <br>
+        <button type="submit">Update</button>
+    </form>
+
+</body>
+</html>

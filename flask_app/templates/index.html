@@ -9,7 +9,11 @@
 <body>
     <h1>Wizards:</h1>
     {% for wizard in wizards %}
-        <p>{{wizard.name}}</p>
+        <a href="/viewwizard/{{wizard.id}}">{{wizard.name}}</a>
+        <a href="/updatewizard/{{wizard.id}}">Update</a>
+        <a href="/deletewizard/{{wizard.id}}">Delete</a>
+        <br>
     {% endfor %}
+    <a href="/newwizard">Add a new Wizard</a>
 </body>
 </html>

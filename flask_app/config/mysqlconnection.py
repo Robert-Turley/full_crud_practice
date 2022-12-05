@@ -2,7 +2,7 @@ import pymysql.cursors
 
 class MySQLConnection:
     def __init__(self,db):
-        connection - pymysql.connect(host = "localhost",
+        connection = pymysql.connect(host = "localhost",
                                     user = 'root',
                                     password = 'rootroot',
                                     db = db,
